@@ -10,9 +10,9 @@ var camera, scene, renderer, i=2;
 
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
                 
-			camera.position.y=-1;
-			camera.position.x=-1;
-			camera.position.z=-1;
+			camera.position.y=-2;
+			camera.position.x=-2;
+			camera.position.z=-2;
 
 				scene = new THREE.Scene();
 
