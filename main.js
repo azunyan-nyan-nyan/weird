@@ -3,7 +3,7 @@ var camera, scene, renderer, i=2;
 
 			init();
 			animate();
-            loadModel();
+            //loadModel();
             loadModel2();
 
 			function init() {
@@ -72,8 +72,8 @@ var camera, scene, renderer, i=2;
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				camera.updateProjectionMatrix();
 
-			}
-           /* function loadModel(){
+			}/*
+            function loadModel(){
                 var loader = new THREE.OBJLoader();
                 loader.load('uh/horse 1.obj', function (object){
 					object.position.y=200;
