@@ -73,14 +73,14 @@ var camera, scene, renderer, i=2;
 				camera.updateProjectionMatrix();
 
 			}
-            function loadModel(){
+           /* function loadModel(){
                 var loader = new THREE.OBJLoader();
                 loader.load('uh/horse 1.obj', function (object){
 					object.position.y=200;
 					
                     scene.add(object);
                 })
-            }
+            }*/
             function loadModel2(){
                 var loader = new THREE.OBJLoader();
                 loader.load('uh/horse 1 copy.obj', function (object){
