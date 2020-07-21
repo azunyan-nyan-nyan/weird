@@ -10,9 +10,9 @@ var camera, scene, renderer, i=2;
 
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
                 
-			camera.position.y=-2;
-			camera.position.x=-2;
-			camera.position.z=-2;
+			camera.position.y=-1;
+			camera.position.x=-1;
+			camera.position.z=-1;
 
 				scene = new THREE.Scene();
 
@@ -35,8 +35,8 @@ var camera, scene, renderer, i=2;
 			function cube() {
 
 				var i, n=0, m=0, h=0, e=3;
-				for(f=0;f<=4;f++){
-                for(i=0;i<=4;i++){
+				for(f=0;f<=2;f++){
+                for(i=0;i<=1;i++){
 					var texture = new THREE.TextureLoader().load( 'texures/weerd.jpg' );
 					var geometry = new THREE.BoxBufferGeometry( 2, 2, 2 );
 					var material = new THREE.MeshBasicMaterial( { map: texture } );
@@ -51,7 +51,7 @@ var camera, scene, renderer, i=2;
 					scene.add( cube[h] );
 					cube[h].position.x = i*e;
 					cube[h].position.z = f*e;
-					for(n=1;n<=4;n++){
+					for(n=1;n<=2;n++){
 						var texture = new THREE.TextureLoader().load( 'texures/weerd.jpg' );
 						var geometry = new THREE.BoxBufferGeometry( 2, 2, 2 );
 						var material = new THREE.MeshBasicMaterial( { map: texture } );
