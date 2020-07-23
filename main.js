@@ -10,9 +10,9 @@ var camera, scene, renderer, i=2;
 
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
                 
-			camera.position.y=-1;
-			camera.position.x=-1;
-			camera.position.z=-1;
+			camera.position.y=4;
+			camera.position.x=4;
+			camera.position.z=4;
 
 				scene = new THREE.Scene();
 
@@ -23,6 +23,9 @@ var camera, scene, renderer, i=2;
                 renderer.setClearColor(0x000000,0);
                 document.body.appendChild( renderer.domElement );
 				controls = new THREE.OrbitControls(camera,renderer.domElement);
+				
+				controls.minDistance = 5;
+				controls.maxDistance = 10;
 
 				window.addEventListener( 'resize', onWindowResize, false );
                 renderer.render(scene, camera);
@@ -35,7 +38,7 @@ var camera, scene, renderer, i=2;
 			function cube() {
 
 				var i, n=0, m=0, h=0, e=3;
-				for(f=0;f<=2;f++){
+				for(f=0;f<=1;f++){
                 for(i=0;i<=1;i++){
 					var texture = new THREE.TextureLoader().load( 'texures/weerd.jpg' );
 					var geometry = new THREE.BoxBufferGeometry( 2, 2, 2 );
@@ -61,6 +64,9 @@ var camera, scene, renderer, i=2;
 							cube[m].position.y = n*e;
 							cube[m].position.x = i*e;
 							cube[m].position.z = f*e;
+							if(n==2){
+								scene.remove(cube[m]);
+							}
 						}
 						n--;
 					}
