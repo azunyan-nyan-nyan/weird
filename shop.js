@@ -9,5 +9,10 @@ document.getElementById("demo").innerHTML = opacity;
 shirt[x].style.opacity=opacity;
     }
 }
+$(function){
+$("#weerdos").click(function(){
+$("#subweerd").slideToggle(500);
+});
+});
 
    
