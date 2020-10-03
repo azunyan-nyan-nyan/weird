@@ -27,9 +27,24 @@
             right: 25%;
             text-align: center;
         }
+        p{
+            font-size: 100px;
+            position: absolute;
+            margin: auto;
+            letter-spacing: 10px;
+            text-shadow:100px 20px 10px darkgrey;
+        }
+        #weerdBox{
+            position: fixed;
+            scale:0.3;
+            z-index: 1;
+            bottom: -70%;
+            left: -15%;
+            }
     </style>
 </head>
 <body>
+    <a  id="weerdBox" href="shop.html"><p>shop</p><img src="texures/weerd.gif"></a>
     <div class="paypal">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_donations" />
