@@ -27,25 +27,78 @@
             right: 25%;
             text-align: center;
         }
-        p{
-            font-size: 100px;
-            position: absolute;
-            margin: auto;
-            letter-spacing: 10px;
-            text-shadow:100px 20px 10px darkgrey;
-        }
-        #weerdBox{
-            position: absolute;
-            top: 50%;
-            left: 25%;
-            right: 25%;
-            text-align: center;
-            scale: 0.3;
-            }
+        #weerdos{
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    z-index: 1;
+    position: relative;
+    display: block;
+}       
+#weerds{
+    position: absolute;
+    bottom: 0%;
+    display: none;
+}
+#weerd{
+    position: relative;;
+    width: 10%;
+}
+#subweerd{
+    display: none;
+    position: relative;
+    background-image: url('textures/weerd_noise.jpg');
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    border-style: ridge;
+    background-size:cover;
+    z-index: 3;
+}
+#subweerd a:hover{
+    background-image: url('textures/weerd_noise.jpg');
+    color: linen;
+    }
+#subweerd a{
+    display: block;
+    padding: 15px;
+    color:black;
+    letter-spacing: 20px;
+    text-decoration: none;
+}
     </style>
 </head>
 <body>
-    <a  id="weerdBox" href="shop.html"><p>shop</p><img src="texures/weerd.gif"></a>
+    <div id="weerds">
+        <div id="subweerd">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Store</a>
+        </div>
+        <div id="weerdos">
+            <div id="weerd1">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            </div>
+            <div id="weerd2">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            </div>
+    </div>
+    </div>
     <div class="paypal">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_donations" />
