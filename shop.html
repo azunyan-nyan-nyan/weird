@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weird Shop</title>
     <style>
         body{
-        background-image:url(texures/weerd_ground.jpg);
+        background-image:url(textures/weerd_ground.jpg);
         background-size:cover;
         height:100%;
         }
@@ -36,39 +41,58 @@
 50%{left:3px;}
 100%{left:0px;}
 }
-#weerds{
-    margin: 2.35%;
+#weerdos{
+    margin-right: 40px;
+    margin-left: 40px;
     z-index: 1;
-    position:fixed;
-    bottom:0%;
+    position: relative;
+    display: block;
 }
 #shirts{
     margin: auto;
+    top:20%;
+    position: absolute;
 }
 #shirt1{
 animation:bob 5s infinite;
-position:relative;
 width: 30%;
+position: relative;
+z-index: -1;
 }
 #shirt2{
 animation:bob 5s infinite;
 animation-delay:1s;
-position: relative;
 width: 30%;
+position: relative;
+z-index:-1;
+}
+#weerds{
+    position: fixed;
 }
 #weerd{
-    animation: shimey 0.05s infinite;
-    width:10%;
+    position: relative;;
+    width: 10%;
 }
 #subweerd{
     display: none;
-    border-style: ridge 5px;   
-    position: absolute;
-    background-color: darkolivegreen;
-    width:100%;
+    position: relative;
+    background-image: url('textures/weerd_noise.jpg');
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    border-style: ridge;
+    background-size:cover;
 }
-#subeweerd a:hover{
-    background-color: darkslategrey;
+#subweerd a:hover{
+    background-image: url('textures/weerd_noise.jpg');
+    color: linen;
+    }
+#subweerd a{
+    display: block;
+    padding: 15px;
+    color:black;
+    letter-spacing: 20px;
+    text-decoration: none;
 }
 #ridley{
     position:fixed;
@@ -91,57 +115,51 @@ width: 30%;
 }
 
 @media only screen and (max-width: 800px){
-     #shirt1{width:100%;}
-     #shirt2{width:100%;}
-     #shirt3{width:100%;}
-     #metroid1{position:fixed;}
-     #metroid2{position:fixed;}
+        #shirt1{width: 100%;}#shirt2{width: 100%;}#shirt3{width: 100%;}
+        #metroid1{position: fixed;}#metroid2{position: fixed;}
 }
     </style>
 <body>
-    <a href="index.html"><img id="metroid1" src="texures/Metroid gifgifsgif 4.gif"></a>
-    <a href="index.html"><img id="metroid2" src="texures/Metroid gifgifsgif 4.gif"></a>
+    <a href="index.html"><img id="metroid1" src="textures/Metroid gifgifsgif 4.gif"></a>
+    <a href="index.html"><img id="metroid2" src="textures/Metroid gifgifsgif 4.gif"></a>
     
-    <img id="ridley" src="texures/Neo_Ridley_Animation.webp">
-<div id="weerds">
+    <img id="ridley" src="textures/Neo_Ridley_Animation.webp">
+    <div id="weerds">
+    <div id="weerdos">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="textures/weeerd.jpg">
+</div>
 <div id="subweerd">
-<a href="index.hmtl">Home</a>
-<a href="store.hmtl">Store</a>
-<p>g0 crAzy</p>
-<p>g0 st00pid</p>
+    <a href="index.html">Home</a>
+    <a href="index.html">Store</a>
 </div>
-        <div id="weerdos">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-        <img id="weerd" src="texures/weeerd.jpg">
-</div>
-</div>
+    </div>
     <div id="demo">WEERDO</div>
     <div id="shirts">
-        <img id="shirt1" onmouseover="fadein(0)" src="texures/neon_weerd_orange.png">
-        <img id="shirt2" onmouseover="fadein(1)" src="texures/neon_weerd_green.png">
-        <img id="shirt1" onmouseover="fadein(2)" src="texures/neon_weerd_orange.png">
-        <img id="shirt2" onmouseover="fadein(3)" src="texures/weerd_tank.png">
-        <img id="shirt1" onmouseover="fadein(4)" src="texures/weerd_short.png">
-        <img id="shirt2" onmouseover="fadein(5)" src="texures/weerd_sleeve.png">
+        <img id="shirt1" onmouseover="fadein(0)" src="textures/neon_weerd_orange.png">
+        <img id="shirt2" onmouseover="fadein(1)" src="textures/neon_weerd_green.png">
+        <img id="shirt1" onmouseover="fadein(2)" src="textures/neon_weerd_orange.png">
+        <img id="shirt2" onmouseover="fadein(3)" src="textures/weerd_tank.png">
+        <img id="shirt1" onmouseover="fadein(4)" src="textures/weerd_short.png">
+        <img id="shirt2" onmouseover="fadein(5)" src="textures/weerd_sleeve.png">
 </div>
 </body>
 <script src="shop.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 </head>
 </html>
