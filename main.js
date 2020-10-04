@@ -101,3 +101,8 @@ var camera, scene, renderer, i=2;
 				renderer.render( scene, camera );
 
 			}
+			$(function()  {
+				$("#weerdos").click(function(){
+					$("#subweerd").slideToggle(500);
+				});
+			});
