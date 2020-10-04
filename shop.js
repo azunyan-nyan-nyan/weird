@@ -9,7 +9,7 @@ document.getElementById("demo").innerHTML = opacity;
 shirt[x].style.opacity=opacity;
     }
 }
-$(function){
+$(function(){
 $("#weerdos").on('click', function(){
 $("#subweerd").slideToggle(500);
 });
