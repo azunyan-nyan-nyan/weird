@@ -7,7 +7,7 @@
     <title>Weird Shop</title>
     <style>
         body{
-        background-image:url(textures/weerd_ground.jpg);
+        background-image:url(texures/weerd_ground.jpg);
         background-size:cover;
         height:100%;
         }
@@ -67,7 +67,7 @@ left: 20%;
 #subweerd{
     display: none;
     position: relative;
-    background-image: url('textures/weerd_noise.jpg');
+    background-image: url('texures/weerd_noise.jpg');
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
@@ -76,7 +76,7 @@ left: 20%;
     z-index: 3;
 }
 #subweerd a:hover{
-    background-image: url('textures/weerd_noise.jpg');
+    background-image: url('texures/weerd_noise.jpg');
     color: linen;
     }
 #subweerd a{
@@ -120,30 +120,30 @@ left: 20%;
 }
     </style>
 <body>
-    <img id="metroid1" src="textures/Metroid gifgifsgif 4.gif">
-    <img id="metroid2" src="textures/Metroid gifgifsgif 4.gif">
+    <img id="metroid1" src="texures/Metroid gifgifsgif 4.gif">
+    <img id="metroid2" src="texures/Metroid gifgifsgif 4.gif">
     
-    <img id="ridley" src="textures/Neo_Ridley_Animation.webp">
+    <img id="ridley" src="texures/Neo_Ridley_Animation.webp">
     <div id="weerds">
     <div id="weerdos">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
-        <img id="weerd" src="textures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
 </div>
 <div id="subweerd">
     <a href="index.html">Home</a>
@@ -151,43 +151,42 @@ left: 20%;
 </div>
     </div>
     <div id="demo">WEERDO</div>
-        <img id="shirt1" onmouseover="fadein(4)" src="textures/neon_weerd_orange.png">
-        <div id="smart-button-container">
-            <div style="text-align: center;">
-              <div id="paypal-button-container"></div>
-            </div>
-          </div>
-        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-        <script>
-          function initPayPalButton() {
-            paypal.Buttons({
-              style: {
-                shape: 'rect',
-                color: 'silver',
-                layout: 'vertical',
-                label: 'buynow',
-                
-              },
-      
-              createOrder: function(data, actions) {
-                return actions.order.create({
-                  purchase_units: [{"description":"weerd","amount":{"currency_code":"USD","value":20}}]
-                });
-              },
-      
-              onApprove: function(data, actions) {
-                return actions.order.capture().then(function(details) {
-                  alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                });
-              },
-      
-              onError: function(err) {
-                console.log(err);
-              }
-            }).render('#paypal-button-container');
-          }
-          initPayPalButton();
-        </script>
+        <img id="shirt1" onmouseover="fadein(4)" src="texures/neon_weerd_orange.png"><div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'silver',
+          layout: 'vertical',
+          label: 'buynow',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"neon weerd orange","amount":{"currency_code":"USD","value":20}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
 </body>
 <script src="shop.js"></script>
 </head>
