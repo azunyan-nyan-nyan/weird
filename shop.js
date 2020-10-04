@@ -10,7 +10,7 @@ shirt[x].style.opacity=opacity;
     }
 }
 $(function){
-$("#weerdos").click(function(){
+$("#weerdos").on('click', function(){
 $("#subweerd").slideToggle(500);
 });
 });
