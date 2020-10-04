@@ -102,7 +102,7 @@ var camera, scene, renderer, i=2;
 
 			}
 			$(function()  {
-				$("#weerdos").click(function(){
+				$("#weerdos").on('click', function(){
 					$("#subweerd").slideToggle(500);
 				});
 			});
