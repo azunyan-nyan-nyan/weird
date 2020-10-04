@@ -1,4 +1,4 @@
-var shirts= document.getElementById("shirts");
+/*var shirts= document.getElementById("shirts");
 var shirt=shirts.childNodes;
 var opacity=1;
 var id = setInterval(fadein, 200);
@@ -8,7 +8,7 @@ opacity+=0.1;
 document.getElementById("demo").innerHTML = opacity;
 shirt[x].style.opacity=opacity;
     }
-}
+}*/
 $(function(){
 $("#weerdos").on('click', function(){
 $("#subweerd").slideToggle(500);
