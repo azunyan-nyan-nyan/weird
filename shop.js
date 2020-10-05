@@ -27,7 +27,7 @@ $(function () {
         else if(width>1001)
         {
             $("#shirt1").elevateZoom({
-                zoomWindowPosition:2
+                zoomWindowPosition:2,lensSize:200
         });
     }
     });
@@ -40,7 +40,7 @@ $(function () {
     else if(width>1001)
     {
         $("#shirt1").elevateZoom({
-            zoomWindowPosition:2
+            zoomWindowPosition:2,lensSize:200
     });
 }
  });
