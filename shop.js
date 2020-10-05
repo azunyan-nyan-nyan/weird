@@ -14,5 +14,35 @@ $("#weerdos").on('click', function(){
 $("#subweerd").slideToggle(500);
 });
 });
+$(function () { 
+    var width = $(window).width();
+    $(window).resize(function () { 
+        var width = $(window).width();
+        if(width<1001)
+        {
+            $("#shirt1").elevateZoom({
+                zoomType: "lens", cursor: "pointer",lensSize:300, containLensZoom: true
+            });
+    }
+        else if(width>1001)
+        {
+            $("#shirt1").elevateZoom({
+                zoomWindowPosition:2
+        });
+    }
+    });
+    if(width<1001)
+    {
+        $("#shirt1").elevateZoom({
+            zoomType: "lens", cursor: "pointer",lensSize:300, containLensZoom: true
+        });
+}
+    else if(width>1001)
+    {
+        $("#shirt1").elevateZoom({
+            zoomWindowPosition:2
+    });
+}
+ });
 
    
