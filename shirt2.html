@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="/jquery.elevateZoom-2.2.3.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weird Shop</title>
@@ -50,15 +51,11 @@
 }
 #shirt1{
     margin: auto;
-    top:6%;
 animation:bob 5s infinite;
 width: 60%;
 position: relative;
 z-index: -1;
 left: 20%;
-}
-#weerds{
-    position: fixed;
 }
 #weerd{
     position: relative;;
@@ -115,8 +112,8 @@ left: 20%;
 
 @media only screen and (max-width: 800px){
         #metroid1{position: fixed;}#metroid2{position: fixed;}
-        #shirt1{width: 100%;left: 0;top:30%}
-        #smart-button-container{left:20%;}
+        #shirt1{width: 100%;left: 0;}
+        #smart-button-container{left:0;width:100%;}
     #weerd{width: 9%;}
 }
     </style>
