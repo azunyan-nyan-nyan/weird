@@ -64,6 +64,14 @@ width: 30%;
 position: relative;
 z-index:0;
 }
+#shirt3{
+animation:bob 5s infinite;
+animation-delay:1s;
+width: 30%;
+position: relative;
+z-index:0;
+}
+#weer
 #weerds{
     position: fixed;
 }
@@ -114,7 +122,7 @@ z-index:0;
 }
 
 @media only screen and (max-width: 800px){
-        #shirt1{width: 100%;}#shirt2{width: 100%;}#shirt3{width: 100%;}
+        #shirt1{width: 100%;}#shirt2{width: 100%;}#shirt3{width: 100%;transform: rotate:(270deg);}
         #metroid1{position: fixed;}#metroid2{position: fixed;}
         #weerd{width:9%;}
         body{
@@ -161,7 +169,7 @@ z-index:0;
         <a href="shirt4.html"><img id="shirt1" onmouseover="fadein(2)" src="texures/neon_weerd_orange.png"></a>
         <a href="shirt3.html"><img id="shirt2" onmouseover="fadein(3)" src="texures/weerd_tank.png"></a>
        <a href="shirt.html"><img id="shirt1" onmouseover="fadein(4)" src="texures/weerd_short.png"></a>
-        <a href="shirt2.html"><img id="shirt2" onmouseover="fadein(5)" src="texures/weerd_sleeve.png"></a>
+        <a href="shirt2.html"><img id="shirt3" onmouseover="fadein(5)" src="texures/weerd_sleeve.png"></a>
 </div>
 </body>
 <script src="shop.js"></script>
