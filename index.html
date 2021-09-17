@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	 crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>weird</title>
+    
+<link rel="shortcut icon" href="texures/triple.png">
+    <style>
+        @-ms-viewport{
+            width: device-width;
+            height:device-width;
+        }
+        body{
+        background-image:url('texures/warp.jpg');
+        background-size:cover;
+        height:100%;
+        }
+        canvas{
+            width: 100%;
+            height: 100%;
+        }
+        div.paypal{
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            right: 25%;
+            text-align: center;
+        }
+        #weerdos{
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    z-index: 1;
+    position: relative;
+    display: block;
+}       
+#weerds{
+    position: absolute;
+    bottom: 0%;
+}
+#weerd{
+    position: relative;;
+    width: 10%;
+}
+#subweerd{
+    display: none;
+    position: relative;
+    background-image: url('texures/weerd_noise.jpg');
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    border-style: ridge;
+    background-size:cover;
+    z-index: 3;
+}
+#subweerd a:hover{
+    background-image: url('texures/weerd_noise.jpg');
+    color: linen;
+    }
+#subweerd a{
+    display: block;
+    padding: 40px;
+    color:black;
+    letter-spacing: 20px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div id="weerds">
+        <div id="subweerd">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Store</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div id="weerdos">
+            <div id="weerd1">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            </div>
+            <div id="weerd2">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="texures/weeerd.jpg">
+            </div>
+    </div>
+    </div>
+    <div class="paypal">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_donations" />
+        <input type="hidden" name="business" value="5TRP5CL7KTCES" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form></div>
+    <script src="three.js"></script>
+    <script src="OrbitControls.js"></script>
+    <script src="OBJLoader.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
