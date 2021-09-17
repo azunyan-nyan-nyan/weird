@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	 crossorigin="anonymous"></script>
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weird Shop</title>
+    <style>
+        body{
+        background-image:url(Untitled_Artwork.JPG);
+        background-size:cover;
+        background-attachment:fixed;
+        background-repeat:no-repeat;
+        height:100%;
+        }
+        @keyframes bob{
+0%{bottom:0px;}
+50%{bottom:20px;}
+100%{bottom:0px;}
+}
+        @keyframes zigzag{
+0%{top:20px;left:10px;}
+20%{top:80px;left:30px}
+40%{top:140px;left:10px}
+60%{top:140px;left:30px}
+80%{top:80px;left:10px}
+100%{top:20px;left:10px}
+}
+        @keyframes zigzag2{
+0%{top:20px;right:10px;}
+20%{top:80px;right:30px}
+40%{top:140px;right:10px}
+60%{top:140px;right:30px}
+80%{top:80px;right:10px}
+100%{top:20px;right:10px}
+}
+        @keyframes shimey{
+0%{left:0px;}
+50%{left:3px;}
+100%{left:0px;}
+}
+#weerdos{
+    margin-right: 40px;
+    margin-left: 40px;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+#shirts{
+    margin: auto;
+    top:15%;
+    position: absolute;
+    z-index: -1;
+}
+#shirt1{
+animation:bob 5s infinite;
+width: 30%;
+position: relative;
+z-index: 0;
+}
+#shirt2{
+animation:bob 5s infinite;
+animation-delay:1s;
+width: 30%;
+position: relative;
+z-index:0;
+}
+#shirt3{
+animation:bob 5s infinite;
+animation-delay:1s;
+width: 30%;
+position: relative;
+z-index:0;
+}
+#weer
+#weerds{
+    position: fixed;
+}
+#weerd{
+    position: relative;
+    width: 10%;
+}
+#subweerd{
+    display: none;
+    position: relative;
+    background-image: url('texures/weerd_noise.jpg');
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    border-style: ridge;
+    background-size:cover;
+    z-index: 3;
+}
+#subweerd a:hover{
+    background-image: url('texures/weerd_noise.jpg');
+    color: linen;
+    }
+#subweerd a{
+    display: block;
+    padding: 15px;
+    color:black;
+    letter-spacing: 20px;
+    text-decoration: none;
+}
+#ridley{
+    position:fixed;
+    right:0%;
+    bottom: 5%;
+    padding: 10px;
+    scale: 200%;
+}
+#metroid1{
+    animation: zigzag 2s infinite;
+    position: absolute;
+    z-index: 1;
+    width:20%;
+}
+#metroid2{
+    animation: zigzag2 2s infinite;
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 800px){
+        #shirt1{width: 100%;}#shirt2{width: 100%;}#shirt3{width: 100%;transform: rotate:(270deg);}
+        #metroid1{position: fixed;}#metroid2{position: fixed;}
+        #weerd{width:9%;}
+        #ridley{display: none;}
+}
+    </style>
+</head>
+<body>
+    <img id="metroid1" src="texures/wings.gif">
+    <img id="metroid2" src="texures/wings.gif">
+    
+    <img id="ridley" src="texures/Neo_Ridley_Animation.gif">
+    <div id="weerds">
+    <div id="weerdos">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+        <img id="weerd" src="texures/weeerd.jpg">
+</div>
+<div id="subweerd">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Store</a>
+    <a href="gallery.html">Gallery</a>
+</div>
+    </div>
+    <div id="shirts">
+        <a href="shirt4.html"><img id="shirt1" onmouseover="fadein(0)" src="texures/neon_weerd_orange.png"></a>
+        <a href="shirt5.html"><img id="shirt2" onmouseover="fadein(1)" src="texures/neon_weerd_green.png"></a>
+        <a href="shirt4.html"><img id="shirt1" onmouseover="fadein(2)" src="texures/neon_weerd_orange.png"></a>
+        <a href="shirt3.html"><img id="shirt2" onmouseover="fadein(3)" src="texures/weerd_tank.png"></a>
+       <a href="shirt.html"><img id="shirt1" onmouseover="fadein(4)" src="texures/weerd_short.png"></a>
+        <a href="shirt2.html"><img id="shirt3" onmouseover="fadein(5)" src="texures/weerd_sleeve.png"></a>
+</div>
+<script src="shop.js"></script>
+</body>
+</html>
