@@ -14,56 +14,10 @@
             background-size: cover;
             min-height: 100vh;
             margin: 0 auto;
-        }/*
-        .photos:hover{
-            height: 600px;
-            position:absolute;
-            bottom:1%;
-            margin-left: auto;
-            margin-right: auto;
-            z-index: 1;
-        }*/
-        #slide{
-            height: 200px;
-            width: 100vw;
-            overflow: hidden;
-            position:absolute;
-            bottom: 4%;
-            margin: 0 auto;
-            padding: 0;
-            z-index: 11;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
-        #slide .photos{
-            display: block;
-            top: 50%;
-            height: 200px;
-            width: 3400px;
-            padding: 0;
-            margin: 0 auto;
-        }
-        #slide .photo{
-            float: left;
-            list-style-type:none;
-            height: 200px;
-            width: auto;
-            background-color: aliceblue;
-        }
-        .photo:hover{
-            background-color: springgreen;
-        }
-        #slide .image{
-            height: 200px;
-            width: auto;
-            margin: 20px;
-        }
-        #gun1{
-            float: left;
-            transform: scaleX(-1);
-        }
-        #gun2{
-            float: right;
-        }
-#weerdos{
+        #weerdos{
     margin-top: 10px;
     margin-right: 40px;
     margin-left: 40px;
@@ -71,13 +25,14 @@
     position: relative;
     display: block;
     text-align: center;
+    background-image: linear-gradient(rgb(166, 255, 0), rgb(128, 49, 114));
 }       
 #weerds{
-    position: absolute;
+    position: fixed;
     top: 0%;
+    background-image: linear-gradient(rgb(128, 49, 114), rgb(166, 255, 0));
 }
 #weerd{
-    position: relative;;
     width: 10%;
 }
 #subweerd{
@@ -102,26 +57,71 @@
     letter-spacing: 20px;
     text-decoration: none;
 }
-#death{
-    position: absolute;
-left: 0;
-right: 0;
-text-align: center;
-margin: auto;
-top: 15%;
-z-index: 15;
+.image1{
+    display: block;
+    margin:auto;
+    margin-top: 30%;
+    width: 50%;
+    border: 5px;
+    border-style: ridge;
 }
-#backdrop{
-    height: 100vh;
-    width: 100vw;
-    background-color: lawngreen;
-    z-index: 10;
-    display: none;
+.image{
+    display: block;
+    margin:auto;
+    margin-top: 10%;
+    width: 50%;
+    border: 5px;
+    border-style: ridge;
+}
+#section1{
+    margin: auto;
+    padding-bottom: 10%;
+}
+#section2{
+    margin:auto;
+    padding-bottom: 10%;
+}
+#backchange{
+    background-color: cadetblue;
+    overflow: hidden;
+}
+#shadow{
+    text-align: center;
+text-shadow: 300px -60px 3px #222222;
+letter-spacing: 15px;
+margin-bottom: 20%;
+}
+#description{
+    text-align: center;
+    position: relative;
+    top:-74px;
+    letter-spacing: 4px;
+    color: lawngreen;
+    font-size: 11px;
+}
+#finisher{
+    display: block;
+    margin: auto;
+    margin-top: 8%;
+}
+.textbox{
+    display: block;
+    margin: auto;
+    width:100%;
+    margin-bottom: 0;
+}.container {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+}
+@media only screen and (max-width: 800px){
+        #weerd{width:9%;}
+        #finisher{scale:120%;display: block;}
+        #shadow{text-shadow: 40px -60px 3px #222222;}
 }
     </style>
 </head>
-<body><div id="backdrop"></div>
-    <img id="death" src="texures/death.gif">
+<body>
     <div id="weerds">
         <div id="weerdos">
             <div id="weerd1">
@@ -153,52 +153,46 @@ z-index: 15;
             </div>
     </div>
     </div>
-    <div id="slide">
-        <ul class="photos" id="fukkit">
-            <li class="photo" onclick="display(0,1)" onmouseover="select(1)" onmouseout="deselect(1)"><img class="image" src="texures/beach reaper.jpeg"></li>
-            <li class="photo" onclick="display(1,3)" onmouseover="select(3)" onmouseout="deselect(3)"><img class="image" src="texures/miami-reaper.jpg"></li>
-            <li class="photo" onclick="display(2,5)" onmouseover="select(5)" onmouseout="deselect(5)"><img class="image" src="texures/mariposa.jpg"></li>
-            <li class="photo" onclick="display(3,7)" onmouseover="select(7)" onmouseout="deselect(7)"><img class="image" src="texures/aztek.jpeg"></li>
-            <li class="photo" onclick="display(4,9)" onmouseover="select(9)" onmouseout="deselect(9)"><img class="image" src="texures/quasi.jpg"></li>
-            <li class="photo" onclick="display(5,11)" onmouseover="select(11)" onmouseout="deselect(11)"><img class="image" src="texures/monkey.jpeg"></li>
-            <li class="photo" onclick="display(6,13)" onmouseover="select(13)" onmouseout="deselect(13)"><img class="image" src="texures/color-skullls.jpg"></li>
-            <li class="photo" onclick="display(0,1)" onmouseover="select(15)" onmouseout="deselect(15)"><img class="image" src="texures/beach reaper.jpeg"></li>
-            <li class="photo" onclick="display(1,3)" onmouseover="select(17)" onmouseout="deselect(17)"><img class="image" src="texures/miami-reaper.jpg"></li>
-            <li class="photo" onclick="display(2,5)" onmouseover="select(19)" onmouseout="deselect(19)"><img class="image" src="texures/mariposa.jpg"></li>
-            <li class="photo" onclick="display(3,7)" onmouseover="select(21)" onmouseout="deselect(21)"><img class="image" src="texures/aztek.jpeg"></li>
-            <li class="photo" onclick="display(4,9)" onmouseover="select(23)" onmouseout="deselect(23)"><img class="image" src="texures/quasi.jpg"></li>
-            <li class="photo" onclick="display(5,11)" onmouseover="select(25)" onmouseout="deselect(25)"><img class="image" src="texures/monkey.jpeg"></li>
-            <li class="photo" onclick="display(6,13)" onmouseover="select(27)" onmouseout="deselect(27)"><img class="image" src="texures/color-skullls.jpg"></li>
-            <li class="photo" onclick="display(0,1)" onmouseover="select(29)" onmouseout="deselect(29)"><img class="image" src="texures/beach reaper.jpeg"></li>
-        </ul>
+    <div id="section1">
+        <img class="image1" src="texures/beach reaper.jpeg">
+        <img class="image1" src="texures/miami-reaper.jpg">
     </div>
-    <img id="gun1" src="texures/strap.gif">
-    <img id="gun2" src="texures/strap.gif">
+    <div id="backchange">
+        <img id="finisher" src="texures/finisher.gif">
+        <p id="shadow">  w e e r d o</p>
+    <div id="section2">
+        <img class="image" src="texures/mariposa.jpg">
+        <div id="container">
+        <img class="textbox" src="texures/box.PNG">
+        <p id="description">weerdo from outer space..</p>
+        </div>
+        <img class="image" src="texures/aztek.jpeg">
+        <div id="container">
+        <img class="textbox" src="texures/box.PNG">
+        <p id="description">weerdo from outer space..</p>
+        </div>
+    </div>
+    <div id="section1">
+        <img class="image" src="texures/quasi.jpg">
+        <div id="container">
+        <img class="textbox" src="texures/box.PNG">
+        <p id="description">weerdo from outer space..</p>
+        </div>
+        <img class="image" src="texures/monkey.jpeg">
+        <div id="container">
+        <img class="textbox" src="texures/box.PNG">
+        <p id="description">weerdo from outer space..</p>
+        </div>
+    </div>
+</div>
+    <div id="section2">
+        <img class="image" src="texures/color-skullls.jpg">
+    </div>
     <script src="shop.js"></script>
     <script>
-        var death = document.getElementById("death");
-        var photos = document.getElementById("fukkit");
-        var image = photos.childNodes;
-        console.log('child nodes',image);
-        var sauce = ['texures/beach reaper.jpeg','texures/miami-reaper.jpg','texures/mariposa.jpg','texures/aztek.jpeg','texures/quasi.jpg','texures/monkey.jpeg','texures/color-skullls.jpg'];
-
-
-
-        function select(x){
-            //console.log(x);
-            image[x].style.opacity ='0.9';
-        }
-        function deselect(x)
-        {
-            //console.log(x);
-            image[x].style.opacity = '1';
-        }
-        function display(x,y)
-        {
-            death.src = sauce[x];
-            death.style.height = '380px';
-            death.style.borderStyle = 'ridge';
-        }
+    /*$(window).scroll(function(){
+        $("p").css("opacity", 1 - $(window).scrollTop() / 250)
+    });
     </script>
 </body>
 </html>
