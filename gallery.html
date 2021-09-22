@@ -24,18 +24,22 @@
 #weerds{
     position: fixed;
     top: 0%;
-    background-image: linear-gradient(rgb(128, 49, 114), rgb(166, 255, 0));
+    width: 100%;
+    margin-bottom: 3%;
+    z-index: 1;
     height: 12%;
+    padding: 1%;
+    background-image: linear-gradient(rgb(128, 49, 114), rgb(166, 255, 0));
 }
     #weerdos{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 0;
     margin-right: 10%;
     margin-left: 10%;
-    z-index: 1;
     position: relative;
     display: block;
     text-align: center;
+    padding-bottom: 2%;
     background-image: linear-gradient(rgb(166, 255, 0), rgb(128, 49, 114));
 }
 #weerd{
@@ -47,11 +51,10 @@
     background-image: url('textures/weerd_noise.jpg');
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 15%;
+    margin-bottom: 2%;
     text-align: center;
     border-style: ridge;
     background-size:cover;
-    z-index: 2;
 }
 #subweerd a:hover{
     background-image: url('textures/weerd_noise.jpg');
@@ -89,9 +92,17 @@
     margin:auto;
     padding-bottom: 10%;
 }
+#section3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 100%;
+    height: 100vh;
+}
 #backchange{
     background-color: azure;
     overflow: hidden;
+    z-index: 1;
 }
 #shadow{
     text-align: center;
@@ -110,10 +121,26 @@ font-family: aye;
     margin: auto;
     margin-top: 8%;
 }
+#death{
+    margin: auto;
+    display: block;
+    margin-top: 20%;
+}
+#iCry{
+    margin: auto;
+    display: block;
+    scale: 200%;
+    margin-bottom: 50%;
+}
 @media only screen and (max-width: 800px){
         #weerd{width:9%;}
+        #death{display: none;}
         #finisher{scale:120%;display: block;}
         #shadow{text-shadow: 40px -60px 3px #222222;}
+}
+@media only screen and (min-width: 800px){
+        .image1{display: none;}
+        #iCry{display: none;}
 }
     </style>
 </head>
@@ -150,6 +177,7 @@ font-family: aye;
     </div>
     </div>
     <div id="section1">
+        <img id="death" src="textures/death.gif">
         <img class="image1" src="textures/weerdo.jpg">
     </div>
     <div id="backchange">
@@ -182,7 +210,8 @@ font-family: aye;
         <hr width="60%"/>
     </div>
     </div>
-    <div id="section2">
+    <div id="section3">
+        <img id="iCry" src="textures/nooooo.gif">
     </div>
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
