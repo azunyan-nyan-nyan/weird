@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="shortcut icon" href="texures/lick.gif"/>
+<head> <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="textures/lick.gif"/>
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	 crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>o . O</title>
     <style>
         body{
-            background-image: url('texures/glitch.gif');
+            background-image: url('textures/glitch.gif');
             background-size: cover;
             min-height: 100vh;
             margin: 0 auto;
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
-        #weerdos{
-    margin-top: 10px;
-    margin-right: 40px;
-    margin-left: 40px;
-    z-index: 1;
-    position: relative;
-    display: block;
-    text-align: center;
-    background-image: linear-gradient(rgb(166, 255, 0), rgb(128, 49, 114));
+        @font-face {
+  font-family:aye;
+  src: url('fonts/ufonts.com_101-antique-alpha-ii.ttf');
+  font-family:ayo;
+  src: url('fonts/ufonts.com_101-camouflage.ttf');
 }       
 #weerds{
     position: fixed;
     top: 0%;
     background-image: linear-gradient(rgb(128, 49, 114), rgb(166, 255, 0));
+    height: 12%;
+}
+    #weerdos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    z-index: 1;
+    position: relative;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(rgb(166, 255, 0), rgb(128, 49, 114));
 }
 #weerd{
     width: 10%;
@@ -38,83 +44,71 @@
 #subweerd{
     display: none;
     position: relative;
-    background-image: url('texures/weerd_noise.jpg');
-    margin-left: 40px;
-    margin-right: 40px;
+    background-image: url('textures/weerd_noise.jpg');
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
     text-align: center;
     border-style: ridge;
     background-size:cover;
-    z-index: 3;
+    z-index: 2;
 }
 #subweerd a:hover{
-    background-image: url('texures/weerd_noise.jpg');
+    background-image: url('textures/weerd_noise.jpg');
     color: linen;
     }
 #subweerd a{
     display: block;
-    padding: 15px;
+    padding: 5%;
     color:black;
+    font-size: 70%;
     letter-spacing: 20px;
     text-decoration: none;
 }
 .image1{
     display: block;
     margin:auto;
-    margin-top: 20%;
-    width: 80%;
-    border: 5px;
-    border-style: ridge;
+    width: 100%;
+    margin-bottom: 0;
+    height: 100vh;
 }
 .image{
     display: block;
     margin:auto;
-    margin-top: 10%;
     width: 80%;
     border: 5px;
+    margin-top: 0;
+    margin-bottom: 5%;
     border-style: ridge;
 }
 #section1{
     margin: auto;
-    padding-bottom: 10%;
-    height:100%;
+    height: 100vh;
 }
 #section2{
     margin:auto;
     padding-bottom: 10%;
 }
 #backchange{
-    background-color: cadetblue;
+    background-color: azure;
     overflow: hidden;
-    height:100%;
 }
 #shadow{
     text-align: center;
 text-shadow: 300px -60px 3px #222222;
 letter-spacing: 15px;
 margin-bottom: 20%;
+font-family: aye;
 }
-#description{
+.description{
     text-align: center;
-    position: relative;
-    top:-90px;
-    letter-spacing: 4px;
-    color: lawngreen;
-    font-size: 11px;
+    padding: 5%;
+    font-family: ayo;
 }
-#finisher{
+.finisher{
     display: block;
     margin: auto;
     margin-top: 8%;
-}
-.textbox{
-    display: block;
-    margin: auto;
-    width:100%;
-    margin-bottom: 0;
-}.container {
-  position: relative;
-  text-align: center;
-  font-size: 30px;
 }
 @media only screen and (max-width: 800px){
         #weerd{width:9%;}
@@ -127,26 +121,26 @@ margin-bottom: 20%;
     <div id="weerds">
         <div id="weerdos">
             <div id="weerd1">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
             </div>
             <div id="weerd2">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
-            <img id="weerd" src="texures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
+            <img id="weerd" src="textures/weeerd.jpg">
             </div>
             <div id="subweerd">
                 <a href="index.html">Home</a>
@@ -156,49 +150,47 @@ margin-bottom: 20%;
     </div>
     </div>
     <div id="section1">
-        <img class="image1" src="texures/beach reaper.jpeg">
-        <img class="image" src="texures/miami-reaper.jpg">
-        <img class="image" src="texures/monkey.jpeg">
+        <img class="image1" src="textures/weerdo.jpg">
     </div>
     <div id="backchange">
-        <img id="finisher" src="texures/finisher.gif">
+        <img data-aos="fade-in" data-aos-duration="2000" class="finisher" src="textures/finisher.gif">
         <p id="shadow">  w e e r d o</p>
     <div id="section2">
-        <img class="image" src="texures/mariposa.jpg">
-        <div id="container">
-        <img class="textbox" src="texures/box.PNG">
-        <p id="description">weerdo from outer space..</p>
-        </div>
-        <hr width="90%" align="center"/>
-        <img class="image" src="texures/aztek.jpeg">
-        <div id="container">
-        <img class="textbox" src="texures/box.PNG">
-        <p id="description">weerdo from outer space..</p>
-        </div>
-        <hr width="90%" align="center"/>
+        <p data-aos="zoom-in-left" data-aos-duration="1000" class="description">"Miami" - 2018</p>
+        <img data-aos="zoom-in-right" data-aos-duration="1000" class="image" src="textures/miami-reaper.jpg">
+        <hr width="90%"/>
+        <p data-aos="zoom-out" data-aos-duration="1000" class="description">"Quetzalcóatl" - 2017</p>
+        <img data-aos="zoom-in-down" data-aos-duration="1000" class="image" src="textures/Quetzalcóatl.jpg">
+        <hr width="90%"/>
+        <p data-aos="zoom-in-right" data-aos-duration="1000" class="description">"Skulls on 24th" - 2018</p>
+        <img data-aos="zoom-in-left" data-aos-duration="1000" class="image" src="textures/Skulls on 24th.jpg">
+        <hr width="90%"/>
+        <p data-aos="zoom-in-down" data-aos-duration="1000" class="description">"Tlālōcān" - 2021</p>
+        <img data-aos="zoom-in" data-aos-duration="1000" class="image" src="textures/Tlālōcān.jpg">
+        <hr width="90%"/>
+        <p data-aos="zoom-in-up" data-aos-duration="1000" class="description">"Westwood Skulls" - 2018</p>
+        <img data-aos="zoom-in" data-aos-duration="1000" class="image" src="textures/Westwood Skulls.png">
+        <hr width="90%"/>
+        <p data-aos="zoom-in-left" data-aos-duration="1000" class="description">"Sandhill Crane" - 2021</p>
+        <img data-aos="zoom-in" data-aos-duration="1000" class="image" src="textures/Sandhill Crane.jpg">
+        <hr width="90%"/>
+        <p data-aos="zoom-in-down" data-aos-duration="1000" class="description">"Live Fast, Die Old" - 2015</p>
+        <img data-aos="zoom-in" data-aos-duration="1000" class="image" src="textures/Live Fast, Die Old.jpg">
+        <hr width="90%"/>
+        <p data-aos="zoom-in-left" data-aos-duration="1000" class="description">"Visually Casuin' Ruckus" - 2021</p>
+        <img data-aos="zoom-in" data-aos-duration="1000" class="image" src="textures/Visually Casuin' Ruckus.jpg">
+        <hr width="60%"/>
     </div>
-    <div id="section1">
-        <img class="image" src="texures/quasi.jpg">
-        <div id="container">
-        <img class="textbox" src="texures/box.PNG">
-        <p id="description">weerdo from outer space..</p>
-        </div>
-        <hr width="90%" align="center"/>
-        <img class="image" src="texures/coi.jpeg">
-        <div id="container">
-        <img class="textbox" src="texures/box.PNG">
-        <p id="description">weerdo from outer space..</p>
-        </div>
     </div>
-</div>
     <div id="section2">
-        <img class="image" src="texures/color-skullls.jpg">
     </div>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+     </script>
+     <script>
+       AOS.init();
+     </script>
     <script src="shop.js"></script>
-    <script>
-    /*$(window).scroll(function(){
-        $("p").css("opacity", 1 - $(window).scrollTop() / 250)
-    });
-    </script>
 </body>
 </html>

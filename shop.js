@@ -9,6 +9,7 @@ document.getElementById("demo").innerHTML = opacity;
 shirt[x].style.opacity=opacity;
     }
 }*/
+var n = 1;
 var gunL = $('#gun1');
 var gunR = $('#gun2');
 var $slide = $('#slide .photos');
@@ -19,7 +20,19 @@ var time = 1000;
 var interval;
 $(function(){
 $("#weerdos").on('click', function(){
-$("#subweerd").slideToggle(500);
+    $("#subweerd").slideToggle(500);
+    /*
+if(n==1){
+    $('#weerdos').css("height", "245%");
+    console.log('n = ',n);
+    n*=-1;
+}
+else
+{
+    $('#weerdos').css("height", "");
+    console.log('n = ',n);
+    n*=-1;
+}*/
 });
 });
 $(function(){
@@ -63,7 +76,7 @@ function stop(){
         console.log('hello');
         start(x);
     });
-});
+});*/
 $(function () { 
     var width = $(window).width();
     $(window).resize(function () { 
@@ -93,6 +106,6 @@ $(function () {
             zoomWindowPosition:2,lensSize:200
     });
 }
- });*/
+ });
 
    
