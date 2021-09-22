@@ -40,7 +40,7 @@ var camera, scene, renderer, i=2;
 				var i, n=0, m=0, h=0, e=3;
 				for(f=0;f<=1;f++){
                 for(i=0;i<=1;i++){
-					var texture = new THREE.TextureLoader().load( 'texures/weerd.jpg' );
+					var texture = new THREE.TextureLoader().load( 'textures/weerd.jpg' );
 					var geometry = new THREE.BoxBufferGeometry( 2, 2, 2 );
 					var material = new THREE.MeshBasicMaterial( { map: texture } );
 					if(i!=0){
@@ -55,7 +55,7 @@ var camera, scene, renderer, i=2;
 					cube[h].position.x = i*e;
 					cube[h].position.z = f*e;
 					for(n=1;n<=2;n++){
-						var texture = new THREE.TextureLoader().load( 'texures/weerd.jpg' );
+						var texture = new THREE.TextureLoader().load( 'textures/weerd.jpg' );
 						var geometry = new THREE.BoxBufferGeometry( 2, 2, 2 );
 						var material = new THREE.MeshBasicMaterial( { map: texture } );
 						m = h + n;
