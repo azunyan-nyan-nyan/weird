@@ -101,19 +101,19 @@ var camera, scene, renderer, i=2;
 			function animate() {
 			
 				requestAnimationFrame( animate );
-				cube[0].rotation.x+=0.005;
+				cube[0].rotation.x+=0.001;
 				cube[0].rotation.y+=0.01;
-				cube[1].rotation.x+=0.005;
+				cube[1].rotation.x+=0.001;
 				cube[1].rotation.y+=0.01;
-				cube[3].rotation.x+=0.005;
+				cube[3].rotation.x+=0.001;
 				cube[3].rotation.y+=0.01;
-				cube[4].rotation.x+=0.005;
+				cube[4].rotation.x+=0.001;
 				cube[4].rotation.y+=0.01;
-				cube[6].rotation.x+=0.005;
+				cube[6].rotation.x+=0.001;
 				cube[6].rotation.y+=0.01;
-				cube[7].rotation.x+=0.005;
+				cube[7].rotation.x+=0.001;
 				cube[7].rotation.y+=0.01;
-				cube[9].rotation.x+=0.005;
+				cube[9].rotation.x+=0.001;
 				cube[9].rotation.y+=0.01;
 				renderer.render( scene, camera );
 
