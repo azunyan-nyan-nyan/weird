@@ -13,6 +13,10 @@
             width: device-width;
             height:device-width;
         }
+@font-face {
+  font-family:b;
+  src: url('fonts/ufonts.com_01organixbold.ttf');
+}
         body{
         background-image:url('textures/warp.jpg');
         background-size:cover;
@@ -36,19 +40,23 @@
     z-index: 1;
     position: relative;
     display: block;
+    width:92.5%;
+    height: 272px;
 }       
 #weerds{
     position: absolute;
     bottom: 0%;
+    width:100%;
 }
-#weerd{
-    position: relative;;
-    width: 10%;
+#weerdo{
+    position: absolute;
+    width: 80%;
+    height:20%;
 }
 #subweerd{
     display: none;
     position: relative;
-    background-image: url('textures/weerd_noise.jpg');
+    background-image: url('textures/weerdo banner.jpg');
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
@@ -57,58 +65,33 @@
     z-index: 3;
 }
 #subweerd a:hover{
-    background-image: url('textures/weerd_noise.jpg');
-    color: linen;
+    background-image: url('textures/subweerd2.jpg');
+    color:black;
     }
+
 #subweerd a{
     display: block;
     padding: 40px;
-    color:black;
+    color:linen;
+    font-size:x-large;
     letter-spacing: 20px;
     text-decoration: none;
+}
+#subweerds{
+font-family: b;
 }
     </style>
 </head>
 <body>
     <div id="weerds">
+        <img id="weerdos" src="textures/weerdo!2.png">
         <div id="subweerd">
-            <a href="index.html">Home</a>
-            <a href="shop.html">Store</a>
-            <a href="gallery.html">Gallery</a>
+            <a id="subweerds" href="index.html">HOME</a>
+            <a id="subweerds" href="shop.html">STORE</a>
+            <a id="subweerds" href="gallery.html">GALLERY</a>
         </div>
-        <div id="weerdos">
-            <div id="weerd1">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            </div>
-            <div id="weerd2">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            <img id="weerd" src="textures/weeerd.jpg">
-            </div>
     </div>
     </div>
-    <div class="paypal">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_donations" />
-        <input type="hidden" name="business" value="5TRP5CL7KTCES" />
-        <input type="hidden" name="currency_code" value="USD" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-        </form></div>
     <script src="three.js"></script>
     <script src="OrbitControls.js"></script>
     <script src="OBJLoader.js"></script>

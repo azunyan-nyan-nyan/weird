@@ -52,6 +52,7 @@ var camera, scene, renderer, i=2;
 					}
 					cube[h] = new THREE.Mesh( geometry, material );
 					scene.add( cube[h] );
+					console.log("cube = ", h);
 					cube[h].position.x = i*e;
 					cube[h].position.z = f*e;
 					for(n=1;n<=2;n++){
@@ -61,11 +62,13 @@ var camera, scene, renderer, i=2;
 						m = h + n;
 						cube[m] = new THREE.Mesh( geometry, material );
 						scene.add( cube[m] );
+						console.log("cube = ", m);
 							cube[m].position.y = n*e;
 							cube[m].position.x = i*e;
 							cube[m].position.z = f*e;
 							if(n==2){
 								scene.remove(cube[m]);
+								console.log("cube remove = ", m);
 							}
 						}
 						n--;
@@ -98,6 +101,20 @@ var camera, scene, renderer, i=2;
 			function animate() {
 			
 				requestAnimationFrame( animate );
+				cube[0].rotation.x+=0.005;
+				cube[0].rotation.y+=0.01;
+				cube[1].rotation.x+=0.005;
+				cube[1].rotation.y+=0.01;
+				cube[3].rotation.x+=0.005;
+				cube[3].rotation.y+=0.01;
+				cube[4].rotation.x+=0.005;
+				cube[4].rotation.y+=0.01;
+				cube[6].rotation.x+=0.005;
+				cube[6].rotation.y+=0.01;
+				cube[7].rotation.x+=0.005;
+				cube[7].rotation.y+=0.01;
+				cube[9].rotation.x+=0.005;
+				cube[9].rotation.y+=0.01;
 				renderer.render( scene, camera );
 
 			}
